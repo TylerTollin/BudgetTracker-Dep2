@@ -6,7 +6,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:WPFUI"
     mc:Ignorable="d"
-    Height="600" Width="920"
+    Height="600" 
+    Width="920"
+    WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     ResizeMode="NoResize"
     Background="Transparent"
@@ -61,20 +63,21 @@
                     HorizontalAlignment="Right"
                     Margin="0, 15, 15, 0"
                     Height="20">
-                    <Ellipse 
-                        Height="20"
-                        Width="20"
+                    
+                    <Button 
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
                         Margin="0, 0, 10, 0"
-                        Fill="Yellow"/>
+                        Background="Yellow"
+                        Content="_"
+                        Style="{StaticResource WindowButtonTheme}"/>
 
-                    <Ellipse 
-                        Height="20"
-                        Width="20"
+                    <Button 
                         VerticalAlignment="Top"
                         HorizontalAlignment="Right"
-                        Fill="Red"/>
+                        Background="Red"
+                        Content="X"
+                        Style="{StaticResource WindowButtonTheme}"/>
                 </StackPanel>
                 
             </Grid>
