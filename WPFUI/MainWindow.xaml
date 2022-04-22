@@ -9,14 +9,12 @@
     Height="600" 
     Width="920"
     WindowStartupLocation="CenterScreen"
-    WindowStyle="None"
-    ResizeMode="NoResize"
+    WindowStyle="ThreeDBorderWindow"
     Background="Transparent"
     AllowsTransparency="True"
 >
     <Border 
         Background="#161842"
-        CornerRadius="30"
     >
 
         <Grid>
@@ -55,31 +53,6 @@
                     Foreground="White"
                     FontSize="18"
                     FontStyle="Italic"/>
-
-                <StackPanel
-                    Grid.Column="1"
-                    Orientation="Horizontal"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Right"
-                    Margin="0, 15, 15, 0"
-                    Height="20">
-                    
-                    <Button 
-                        VerticalAlignment="Top"
-                        HorizontalAlignment="Right"
-                        Margin="0, 0, 10, 0"
-                        Background="Yellow"
-                        Content="_"
-                        Style="{StaticResource WindowButtonTheme}"/>
-
-                    <Button 
-                        VerticalAlignment="Top"
-                        HorizontalAlignment="Right"
-                        Background="Red"
-                        Content="X"
-                        Style="{StaticResource WindowButtonTheme}"/>
-                </StackPanel>
-                
             </Grid>
 
             <StackPanel Grid.Row="1">
