@@ -65,15 +65,15 @@
                 <RadioButton
                     x:Name="radioHome"
                     Content="Home"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}" Click="radioHome_Click"/>
                 <RadioButton
                     x:Name="radioIncome"
                     Content="Income"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}" Click="radioIncome_Click"/>
                 <RadioButton
                     x:Name="radioExpenses"
                     Content="Expenses"
-                    Style="{StaticResource MenuButtonTheme}"/>
+                    Style="{StaticResource MenuButtonTheme}" Click="radioExpenses_Click"/>
             </StackPanel>
         </Grid>
     </Border>
