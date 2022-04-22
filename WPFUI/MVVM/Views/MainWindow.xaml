@@ -11,13 +11,12 @@
     WindowStartupLocation="CenterScreen"
     WindowStyle="ThreeDBorderWindow"
     Background="Transparent"
-    AllowsTransparency="True"
 >
     <Border 
         Background="#161842"
     >
 
-        <Grid>
+        <Grid x:Name="gridMaster">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width=".25*"/>
                 <ColumnDefinition Width="1*"/>
@@ -29,6 +28,7 @@
             </Grid.RowDefinitions>
 
             <TextBlock
+                x:Name="txtAppName"
                 Text="Budget Tracker"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
@@ -37,8 +37,10 @@
                 FontWeight="Bold"
             />
 
-            <Grid Grid.Row="0"
-                  Grid.Column="1">
+            <Grid 
+                x:Name="gridHeader"
+                Grid.Row="0"
+                Grid.Column="1">
                 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -46,6 +48,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock
+                    x:Name="txtAppCaption"
                     Text="Your Personal Financial Management Tool"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"
@@ -55,28 +58,22 @@
                     FontStyle="Italic"/>
             </Grid>
 
-            <StackPanel Grid.Row="1">
+            <StackPanel 
+                x:Name="panelMasterNavigation"
+                Grid.Row="1">
+                
                 <RadioButton
+                    x:Name="radioHome"
                     Content="Home"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="20"
-                    Style="{StaticResource MenuButtonTheme}"
-                />
+                    Style="{StaticResource MenuButtonTheme}"/>
                 <RadioButton
-                    Content="Expenses"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="20"
-                    Style="{StaticResource MenuButtonTheme}"
-                />
-                <RadioButton
+                    x:Name="radioIncome"
                     Content="Income"
-                    Height="50"
-                    Foreground="White"
-                    FontSize="20"
-                    Style="{StaticResource MenuButtonTheme}"
-                />
+                    Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton
+                    x:Name="radioExpenses"
+                    Content="Expenses"
+                    Style="{StaticResource MenuButtonTheme}"/>
             </StackPanel>
         </Grid>
     </Border>
