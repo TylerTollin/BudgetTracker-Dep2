@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WPFUI.MVVM.Views.IncomeUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFUI.MVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid
+        x:Name="gridIncome"
+        Grid.Column="1"
+        Grid.Row="1">
+
+        <TextBlock
+            x:Name="txtIncomeTest"
+            Text="Income View"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="22"
+            Foreground="White"/>
+
+    </Grid>
+</UserControl>
