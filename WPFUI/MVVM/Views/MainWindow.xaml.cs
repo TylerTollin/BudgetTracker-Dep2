@@ -20,17 +20,17 @@ namespace WPFUI
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        HomeUI homeUI = new HomeUI();
-        IncomeUI incomeUI = new IncomeUI();
-        ExpensesUI expensesUI = new ExpensesUI();   
+    { 
 
         public MainWindow()
         {
             InitializeComponent();
-            homeUI.Visibility = Visibility.Visible;
-            incomeUI.Visibility = Visibility.Hidden;
-            expensesUI.Visibility = Visibility.Hidden;
+        }
+
+        private void HomeViewControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            WPFUI.MVVM.ViewModels.ViewModelHome viewmodelHomeObject = 
+                new MVVM.ViewModels.ViewModelHome();
         }
 
         private void radioHome_Click(object sender, RoutedEventArgs e)

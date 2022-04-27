@@ -77,7 +77,11 @@
     </Compile>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="MVVM\ViewModels\ViewModelHome.cs" />
+    <Compile Include="MVVM\ViewModels\ViewModelIncome.cs" />
     <Compile Include="MVVM\ViewModels\ViewModelBase.cs" />
+    <Compile Include="MVVM\ViewModels\ViewModelExpenses.cs" />
+    <Compile Include="MVVM\ViewModels\ViewModelMain.cs" />
     <Compile Include="MVVM\Views\ExpensesUI.xaml.cs">
       <DependentUpon>ExpensesUI.xaml</DependentUpon>
     </Compile>
